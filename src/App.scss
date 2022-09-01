@@ -1,0 +1,62 @@
+$border-rad: 8px;
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-color: blue;
+    font-size: 16px;
+}
+
+body {
+    transition: background-color 1s;
+}
+
+#quote-box {
+    width: 450px;
+    border: none;
+    padding: 15px;
+    background-color: white;
+    border-radius: $border-rad;
+
+
+    p {
+        font-style: italic;
+        font-weight: 500;
+    }
+
+    #text,
+    #author {
+        transition: color 1s;
+    }
+
+
+    #new-quote {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .btn-tweet{
+            padding: 8px;
+            border-radius: $border-rad;
+            background-color: blue;
+            color: white;
+            transition: background-color 1s;
+        }
+
+        #btn-change-quote {
+            border: none;
+            background-color: blue;
+            color: white;
+            padding: 12px 25px;
+            margin-left: 55px;
+            border-radius: $border-rad;
+            font-size: 16px;
+            transition: background-color 1s;
+        }
+
+    }
+}
